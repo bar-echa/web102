@@ -384,15 +384,14 @@ form .btn2{
     color: blue;
 }
 /*------------css for small screen-------*/
-@media only screen and (max-width:750px)
-{
-    .container{
+@media only screen and (max-width:750px) {
+    .container {
         max-width: 500px;
-        width:100%;
+        width: 100%;
         margin: 0 auto;
     }
-    #header{
-         
+
+    #header {
         width: 100%;
         height: 40vh; /* Reduced height for smaller screens */
         background-position: center;
@@ -402,130 +401,134 @@ form .btn2{
         margin-left: 0; /* Removed left margin for better centering */
     }
 
+    .header-text p {
+        font-size: 16px;
+        margin-top: 1rem;
+        margin-left: 0rem;
     }
-    .header-text p{
-     font-size: 16px;
-     margin-top:1rem;
-     margin-left: 0rem;
+
+    .header-text h1 {
+        font-size: 24px;
+        margin-top: 3rem;
+        padding: 1rem;
     }
-     
-    
-    .header-text h1{
-     font-size: 24px;
-     margin-top: 3rem;
-        
-     padding:1rem;
-    }
-   
-    
-    nav ul
-    {
+
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
         right: -200px;
         width: 200px;
         height: 100vh;
-        padding-top:50px;
+        padding-top: 50px;
         z-index: 2;
-        transiton:right 0.3s ease;
+        transition: right 0.3s ease; /* Corrected typo */
     }
-nav ul li{
-    display: block;
-    margin:15px;
-}
 
+    nav ul li {
+        display: block;
+        margin: 15px;
+    }
 
- 
+    .sub-title {
+        font-size: 24px;
+    }
 
-.sub-title{
-    font-size: 24px;
-}
-#about{
-    margin: 5rem 0;
-}
-.about-col-1,.about-col-2{
-    flex-basis: 100%;
-    margin-bottom:20px;
-}
-.about-col-1{
-    margin-bottom: 30px;
-    
-}
-.about-col-2{
-    font-size: 14px;
-}
+    #about {
+        margin: 5rem 0;
+    }
 
-.tab-links{
-    font-size: 16px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
- 
-.contact-left,.contact-right{
-    flex-basis: 100%;
-}
-.copyright{
-    font-size: 14px;
-}
-#msg{
-    color: #61b752;
-    margin-top: -35px;
-    display: block;
-}
-#header{
-    width: 100%;
-    height: 50vh;
-}
-#services{
-margin: -6rem 0;
-}
-.header-text p{
-    margin-top: 17rem;
-    font-size: 16px;
-}
-.layer h3{
-margin-left: 6rem;
-}
-.layer p{
-    margin: -9rem 0;
-}
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
 
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
 
-    
-    .plant{
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    #msg {
+        color: #61b752;
+        margin-top: -35px;
+        display: block;
+    }
+
+    #services {
+        margin: -6rem 0;
+    }
+
+    .header-text p {
+        margin-top: 17rem;
+        font-size: 16px;
+    }
+
+    .layer h3 {
+        margin-left: 6rem;
+    }
+
+    .layer p {
+        margin: -9rem 0;
+    }
+
+    .plant {
         width: calc(100% - 10px);
     }
-    #plants h1{
-       width: -16rem;
-       margin: 3rem 0;
+
+    #plants h1 {
+        width: -16rem;
+        margin: 3rem 0;
     }
-    .plants{
+
+    .plants {
         width: 30rem;
         margin: 1rem 0;
     }
-    .plants img{
-        width: 15rem;
-        margin:1rem 0;
-    }
-    .row{
-        width: calc(100% -10px);
-    }
-    .column{
-        width:30rem;
-        margin:1rem 0;
-    } 
-    .column img{
 
+    .plants img {
+        width: 15rem;
+        margin: 1rem 0;
+    }
+
+    .row {
+        width: calc(100% - 10px);
+    }
+
+    .column {
+        width: 30rem;
+        margin: 1rem 0;
+    }
+
+    .column img {
         height: 15rem;
-        margin:1rem 0;
+        margin: 1rem 0;
     }
 
     .tab-links {
         margin: 0 3px; /* Adjusted spacing for smaller screens */
-        font-size:1rem;
+        font-size: 1rem;
     }
-    #icon{
+
+    #icon {
         margin-left: 3rem;
     }
 }
